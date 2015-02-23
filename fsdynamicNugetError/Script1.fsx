@@ -5,4 +5,4 @@ open FSharp.InteropServices.Dynamic
 
 let cudnn = Library(@"L:\cudnn\cudnn64_65.dll")
 
-printfn "%s" (cudnn?cudnnGetVersion())
+printfn "%d" (cudnn?cudnnGetVersion())
